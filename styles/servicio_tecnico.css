@@ -1,0 +1,539 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+body {
+    background-color: #F4F4F4;
+}
+
+/* CONTENEDOR - ENGLOBA TODA LA PAGINA */
+
+.container {
+    width: 95%;
+    padding-top: 20px;
+    margin: 20px auto;
+    margin-top: 0;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: 
+                         "content content content"
+                         "widget-2 widget-2 widget-2"
+                         "widget-1 widget-1 widget-1"
+                         "footer footer footer";
+}
+
+/* CLASES DEL CONTENEDOR - CADA UNA DE ELLAS */
+
+.container div, 
+.container .header, 
+.container .content,
+.container .sidebar,
+.container .footer {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+/* HEADER DE LA PAGINA */
+
+.container .header {
+    color: aliceblue;
+    grid-area: header;
+    padding: 0px;
+}
+
+/* IMAGEN DEL HEADER */
+
+.container .header #header_image {
+    width: 100%;
+    border-radius: 14px;
+}
+
+/* CONTENIDO - ENGLOBA EL CONTENIDO PRINCIPAL */
+
+.container .content {
+    grid-area: content;
+    background-color: #EBE3D5;
+    text-align: justify;
+}
+
+/* CONTENIDO 2 - ENGLOBA EL CONTENIDO SECUNDARIO */
+
+.container .content2 {
+    grid-area: content2;
+    background-color: #EBE3D5;
+    color: #1E412F;
+    text-align: justify;
+}
+
+
+.container .content span {
+    color: #EBE3D5;
+    font-size: 55pt;
+    display: flex;
+    justify-content: center;
+}
+
+.container .content2 span {
+    color: #1E412F;
+    font-size: 55pt;
+    display: flex;
+    justify-content: center;
+}
+
+.container .sidebar {
+    grid-column: 3 / 4;
+    background-color: #1E412F;
+    min-height: 100px;
+    grid-area: sidebar;
+}
+
+.container .sidebar h1 {
+    color: #EBE3D5;
+    font-size: 18pt;
+}
+
+.container .sidebar a {
+    color: #E5A73C;
+    text-decoration: none;
+    font-size: 11pt;
+}
+
+.container .sidebar span {
+    margin-right: 10px;
+}
+
+.container .sidebar ul {
+    color: #EBE3D5;
+    font-size: 18pt;
+    list-style: none;
+    /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.container .sidebar ul li {
+    padding-bottom: 15px;
+}
+
+.container .sidebar ul li a {
+    font-size: 18pt;
+}
+
+.container .sidebar .share_buttons li span {
+    font-size: 35pt;
+}
+
+.container .sidebar div {
+    background-color: transparent;
+    padding: 0;
+    /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
+    padding-bottom: 150px;
+}
+
+.container .sidebar .share_buttons li {
+    display: inline-block;
+}
+
+
+/* WIDGETS - ENGLOBA AMBOS WIDGETS */
+
+.container .widget-1 {
+    background-color: #E5A73C;
+    color: #EBE3D5;
+}
+
+.container .widget-2 {
+    background-color: transparent;
+    color: #EBE3D5;
+}
+
+/* WIDGET 1 - SOLO EL PRIMER WIDGET */
+
+.container .widget-1 {
+    grid-area: widget-1;
+}
+
+/* WIDGET 2 - SOLO EL SEGUNDO WIDGET */
+
+.container .widget-2 {
+    grid-area: widget-2;
+}
+
+.container .widget-2 h2{
+    color: black;
+}
+
+.tabla_harinas_hogar{
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+#img_producto{
+    
+    border-radius: 4% 0% 0% 4%;
+    padding-left: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-right: 1%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#producto_descripcion{
+
+    border-radius: 0% 0.6em 0.6em 0%;
+    text-align: justify;
+    vertical-align: middle;
+    padding-left: 1.5%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/* FOOTER - ENGLOBA TODO EL FOOTER */
+
+.container .footer {
+    background-color: #324D53;
+    color: #EBE3D5;
+    grid-area: footer;
+}
+
+.container .footer div {
+    padding: 0;
+    background-color: transparent;
+}
+
+.container .footer .contact #contact,
+.container .footer .contact #boletin,
+.container .footer .contact #bolsa_trabajo,
+.container .footer .contact #siguenos {
+    display: inline-flex;
+    font-size: 14pt;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - CONTACTO */
+
+.container .footer .contact #contact {
+    padding-right: 290px;
+    /* 370 defualt */
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO CONTACTO */
+
+.container .footer .contact #contact ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+
+/* ELEMENTO - INFORMACION CONTACTO */
+
+.container .footer .contact #contact ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 3px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - BOLETIN */
+
+.container .footer .contact #boletin {
+    padding-right: 290px;
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO BOLETIN */
+
+.container .footer .contact #boletin ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION BOLETIN */
+
+.container .footer .contact #boletin ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #boletin ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - BOLETIN */
+
+.container .footer .contact #bolsa_trabajo {
+    padding-right: 290px;
+    padding-bottom: 15px;
+}
+
+/* ELEMENTO - TITULO BOLSA DE TRABAJO */
+
+.container .footer .contact #bolsa_trabajo ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION BOLSA DE TRABAJO */
+
+.container .footer .contact #bolsa_trabajo ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #bolsa_trabajo ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ELEMENTO - SIGUENOS EN */
+
+.container .footer .contact #siguenos {
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+/* ELEMENTO - TITULO SIGUENOS EN */
+
+.container .footer .contact #siguenos ul #footer_title {
+    font-size: 17pt;
+    font-weight: bold;
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+/* ELEMENTO - INFORMACION SIGUENOS EN */
+
+.container .footer .contact #siguenos ul li {
+    font-size: 10pt;
+    list-style: none;
+    padding-top: 7px;
+}
+
+.container .footer .contact #siguenos ul .share_buttons_footer li {
+    display: inline-block;
+    padding-right: 7px;
+}
+
+.container .footer .contact #siguenos ul li a {
+    color: #EBE3D5;
+    text-decoration: none;
+    font-size: 35pt;
+}
+
+/* MEDIA QUIERY - DISPOSITIVOS CON UN ANCHO MAXIMO DE 768 (1180 op) PIXELES */
+
+@media screen and (max-width: 1180px) {
+    
+    .container {
+
+        grid-template-areas: 
+                             "content content content"
+                             "widget-2 widget-2 widget-2"
+                             "widget-1 widget-1 widget-1"
+                             "sidebar sidebar sidebar"
+                             "footer footer footer";
+
+        padding-top: 50px;
+
+        
+    }
+
+    .container .sidebar div {
+        background-color: transparent;
+        padding: 0;
+        /* CONTROL DEL ESPACIADO ENTRE LOS ELEMENTOS DE LA SIDEBAR */
+        padding-bottom: 50px;
+    }
+
+    /* Force table to not be like tables anymore */
+  .tabla_harinas_hogar, #img_producto, #producto_descripcion { 
+    display: block; 
+  }
+}
+  
+/* ---------------------------------------------------------- */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+section{ /* Centra el contenido */
+    width: 100%;
+    background-color: #EBE3D5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+.contenedor div {
+    background-color: #08903E;
+    border-radius: .5rem;
+    padding: 0;
+}
+
+.contenedor div .lineamientos_titulo{
+    background-color: transparent;
+    color: black;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    border-radius: .4rem;
+}
+
+.acordeon-obj{
+    background-color: #283042;
+    border-radius: .4rem;
+    margin-bottom: .5rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px regba(0,0,0,.1);
+
+}
+
+.acordeon-link{
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, .8);
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.acordeon-link i{
+    color: rgba(255, 255, 255, .8);
+    padding: .5rem;
+}
+
+.contenedor .respuesta{
+    background-color: #1E412F;
+}
+.respuesta{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    /*transition: max-height 650ms;*/
+}
+
+.respuesta::before{
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #8fc460;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%);
+}
+
+.respuesta p{
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, .6);
+    padding: 2rem;
+
+}
+
+.acordeon-obj:target .respuesta{
+    max-height: 20%;
+
+}
+
+.acordeon-obj .acordeon-link .icon-triangle-up{
+    display: none;
+
+}
+
+.acordeon-obj:target .acordeon-link .icon-triangle-down{
+    display: none;
+
+}
+
+.acordeon-obj:target .acordeon-link .icon-triangle-up{
+    display: block;
+
+}
+/* ----------------------------------------------------------- */
+
+
+@media screen and (min-width: 1180px) and (max-width: 1794px){
+
+    .container .footer .contact #contact {
+        padding-right: 160px;
+        /* 370 defualt */
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #boletin {
+        padding-right: 160px;
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #bolsa_trabajo {
+        padding-right: 160px;
+        padding-bottom: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 1078px) {
+
+    .container .footer .contact #contact {
+        padding-right: 50px;
+        /* 370 defualt */
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #boletin {
+        padding-right: 50px;
+        padding-bottom: 15px;
+    }
+    .container .footer .contact #bolsa_trabajo {
+        padding-right: 50px;
+        padding-bottom: 15px;
+    }
+
+
+}

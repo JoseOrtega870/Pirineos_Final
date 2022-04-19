@@ -1,0 +1,259 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: Montserrat;
+}
+h2{
+    align-self: center;
+    color: white;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-Regular.otf);
+}
+
+.container{
+  display: flex;
+    flex-direction: row;
+}
+
+.body{
+    width: 70%;
+}
+
+
+ /* estilos para pagina de derivados y ¿quienes somos? */
+#deriv_descripcion{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Montserrat;
+    text-align: justify;
+}
+
+.titulos{
+
+  color: #519C45;
+  font-size: 36pt;
+  width: 90%;
+  margin-left: 14%;
+}
+
+#seg_box{
+
+    width: 450px;
+    height: 15px;
+    background-color:#EED11F;
+    border-radius: 14px;
+    text-align: center;
+    color: #000000;
+}
+
+
+#catalogo_titulo_box{
+    width: 635px;
+    height: 35px;
+    background-color: #08903E;
+    border-radius: 14px;
+}
+
+#catalogo_titulo{
+    padding: 6px;
+    margin-left: 15px;
+    color: #EBE3D5;
+}
+
+#catalogo_tabla{
+    padding-left: 20%;
+}
+
+dt{
+    color: #08903E;
+    font-size: 14pt;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+#catalog_des_box{
+    width: 600px;
+    height: 30px;
+    background-color: #282936;
+    border-radius: 14px;
+}
+
+dd{
+    color: #EBE3D5;
+    padding-top: 5px;
+    padding-left: 14px;
+}
+
+.tabla_prod{
+    margin-left: 10%;
+    width: 80%;
+    
+}
+#fila_tabla{
+    height: 45vh;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+}
+#celda_imagen{
+    width: 30%;
+    background-color: grey;
+
+}
+
+#info_tabla{
+    width: 75%;
+    text-align: justify; 
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    font-family: Montserrat;
+}
+#info_tabla_am{
+    width: 75%;
+    text-align: justify; 
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #FFC627;
+    padding-top: 3%;
+    font-family: Montserrat;
+}
+#tabla_image{
+    width: 100%;
+    height: 100%;
+}
+
+
+ /* estilos para display de evolución ¿quienes somos? */
+#fila_ev{
+    height: 30vh;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+}
+#celda_ev{
+    width: 40%;
+    background-color: grey;
+    text-align: center;
+    padding-top: 3%;
+
+}
+
+#info_ev{
+    width: 75%;
+    text-align: justify; 
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    background-color: #FFC627;
+    font-family: Montserrat;
+
+}
+/* Estilos para mision,vision,valores y politicas ¿quines somos? */
+
+.cuadro_carac{
+    margin-left: 10%;
+    width: 80%;
+
+}
+
+#fila_carac{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#apartado_carac{
+    width: 45%;
+    margin-right: 5%;
+    margin-left: 5%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+
+  
+}
+#titulo_ap{
+    background-color: green;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-radius: 7px;
+    font-family: Montserrat;
+
+}
+#titulo_ap_am{
+    background-color: grey;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-radius: 7px;
+    background-color: #FFC627;
+    font-size: 13px;
+    font-family: Montserrat;
+}
+#info_ap{
+    /*background-color: grey;*/
+    width: 90%;
+    height: 55;
+    margin: auto;
+    text-align: justify;
+    padding: 5%;
+    border-radius: 7px;
+    border-color: blue;
+    font-family: Montserrat;
+    
+    
+}
+
+
+
+/* Id para efectos js*/
+
+
+#boton_1{
+    background-color:#FFC627;
+    border: 0;
+    font-size: 24px;
+}
+#boton_2{
+    background-color:#FFC627;
+    border: 0;
+    font-size: 24px;
+}
+
+
+#text_1991{
+    color: white;
+}
+#text_2001{
+    color: white;
+}
+#text_2004{
+    color: white;
+}
+#text_2009{
+    color: white;
+}
+#text_2011{
+    color: white;
+}
+#text_2014{
+    color: white;
+}
+#text_2016{
+    color: white;
+}
+#text_2018{
+    color: white;
+}
+#text_2020{
+    color: white;
+}
+
+
